@@ -13,7 +13,24 @@
                 color: "red",
                 passengers: 2,
                 convertible: false,
-                mileage: 1021
+                mileage: 1021,
+                started: false,
+
+                start: function() {
+                    this.started = true;
+                },
+
+                stop: function () {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom!");
+                    } else {
+                        alert("You need to start the engine first.");
+                    }
+                }
             };
 
             let cadi = {
@@ -23,7 +40,24 @@
                 color: "tan",
                 passengers: 5,
                 convertible: false,
-                mileage: 12892
+                mileage: 12892,
+                started: false,
+
+                start: function() {
+                    this.started = true;
+                },
+
+                stop: function () {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom!");
+                    } else {
+                        alert("You need to start the engine first.");
+                    }
+                }
             };
 
             let taxi = {
@@ -33,7 +67,24 @@
                 color: "yellow",
                 passengers: 4,
                 convertible: false,
-                mileage: 281341
+                mileage: 281341,
+                started: false,
+
+                start: function() {
+                    this.started = true;
+                },
+
+                stop: function () {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom!");
+                    } else {
+                        alert("You need to start the engine first.");
+                    }
+                }
             };
 
             let fiat = {
@@ -56,7 +107,7 @@
 
                 drive: function() {
                     if (this.started) {
-                        alert("Zoom zoom!");
+                        alert(this.make + " " + this.model + " goes zoom zoom!");
                     } else {
                         alert("You need to start the engine first.");
                     }
