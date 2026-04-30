@@ -16,15 +16,15 @@
                 mileage: 1021,
                 started: false,
 
-                start: function() {
+                start() {
                     this.started = true;
                 },
 
-                stop: function () {
+                stop() {
                     this.started = false;
                 },
 
-                drive: function() {
+                drive() {
                     if (this.started) {
                         alert(this.make + " " + this.model + " goes zoom zoom!");
                     } else {
@@ -43,15 +43,15 @@
                 mileage: 12892,
                 started: false,
 
-                start: function() {
+                start() {
                     this.started = true;
                 },
 
-                stop: function () {
+                stop() {
                     this.started = false;
                 },
 
-                drive: function() {
+                drive() {
                     if (this.started) {
                         alert(this.make + " " + this.model + " goes zoom zoom!");
                     } else {
@@ -70,15 +70,15 @@
                 mileage: 281341,
                 started: false,
 
-                start: function() {
+                start() {
                     this.started = true;
                 },
 
-                stop: function () {
+                stop() {
                     this.started = false;
                 },
 
-                drive: function() {
+                drive() {
                     if (this.started) {
                         alert(this.make + " " + this.model + " goes zoom zoom!");
                     } else {
@@ -97,15 +97,15 @@
                 mileage: 88000,
                 started: false,
 
-                start: function() {
+                start() {
                     this.started = true;
                 },
 
-                stop: function () {
+                stop() {
                     this.started = false;
                 },
 
-                drive: function() {
+                drive() {
                     if (this.started) {
                         alert(this.make + " " + this.model + " goes zoom zoom!");
                     } else {
@@ -135,6 +135,18 @@
             fiat.start();
             fiat.drive();
             fiat.stop();
+
+            cadi.start();
+            cadi.drive();
+            cadi.stop();
+
+            chevy.start();
+            chevy.drive();
+            chevy.stop();
+
+            taxi.start();
+            taxi.drive();
+            taxi.stop();
         </script>
     </body>
 </html>
